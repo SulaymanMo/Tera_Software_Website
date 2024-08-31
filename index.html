@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- _____ header _____ -->
+    <header class="sticky-top">
+        <div class="padd shadow-sm">
+
+            <section class="d-flex align-items-center flex-grow-1">
+                <section class="bars toggleAside" onclick="toggleAside()">
+                    <div></div>
+                    <div></div>
+                    <div class="mb-0"></div>
+                </section>
+                <h1 class="mb-0 fw-bold"><a href="#" class="text-decoration-none">Master</a></h1>  
+            </section>
+
+            <section class="right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-lightbulb"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-user"></i>
+            </section>
+
+
+        </div>
+    </header>
+
+    <!-- _____ sidebar _____ -->
+    <aside>
+        <div class="padd pt-3 pb-3">
+            <a href="portfolio.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/journalist.svg" class="img-fluid" alt="journalist">
+                <h3 class="m-0">Portfolio</h3>
+            </a>
+            <a href="brand.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/investor.svg" class="img-fluid" alt="investor">
+                <h3 class="m-0">Brand</h3>
+            </a>
+            <a href="services.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/entrepreneur.svg" class="img-fluid" alt="entrepreneur">
+                <h3 class="m-0">Services</h3>
+            </a>
+            <a href="about.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/busniess.svg" class="img-fluid" alt="busniess">
+                <h3 class="m-0">About Us</h3>
+            </a>
+            <a href="contact.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/developer.svg" class="img-fluid" alt="developer">
+                <h3 class="m-0">call Us</h3>
+            </a>
+            <a href="#" onclick="actImg(this)" class="m-0" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/logo.svg" class="img-fluid " alt="logo">
+                <h3 class="m-0">learn more</h3>
+            </a>
+        </div>
+    </aside>
+
+    <!-- content => 2 pages & footer -->
+    <main class="content">
+        <div class="padd">
+            <div class="container h-100">
+
+                <!-- _____ page-1 _____ -->
+                <section class="page-1 mb-5">
+                    <div class="img">
+                        <img src="img/middle.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="info text-center">
+                        <h1 class="fw-bold">MASTER</h1>
+                        <h1>Some content here</h1>
+                    </div>
+                    <div class="arrow">
+                        <a href="#"><i class="fa-solid fa-angles-down"></i></a>
+                    </div>
+                </section>
+
+                <!-- _____ page-2 _____ -->
+                <section class="page-2" id="page-2">  
+                    <div class="text-center mb-5">
+                        <h1>Which Describes You Best</h1>
+                        <p>Click on the card that best describes you.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #EB434E;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/journalist.svg" class="img-fluid" alt="journalist">
+                                        <h4 class="mb-0 text-center fw-bold text-center" style="color: #EB434E;">portfolio</h4>
+                                    </div>
+                                    <p class="card-text">Like what you see? Want to talk to us? Learn more about Ninja, and we’ll tell you what you want to know.</p>
+                                    <div class="text-end">
+                                        <a href="portfolio.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #EB434E; color: #EB434E;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #0B51FF;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/investor.svg" class="img-fluid" alt="investor">
+                                        <h4 class="mb-0 text-center fw-bold" style="color: #0B51FF;">brand</h4>
+                                    </div>
+                                    <p class="card-text">Are you a tech investor or wanting to dip your toe in the exciting world of early-stage tech investments? Let us help you on your journey.</p>
+                                    <div class="text-end">
+                                        <a href="brand.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #0B51FF; color: #0B51FF;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #F2A212;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/busniess.svg" class="img-fluid" alt="busniess">
+                                        <h4 class="mb-0 text-center fw-bold" style="color: #F2A212;">about us</h4>
+                                    </div>
+                                    <p class="card-text">Do you own a business and want to make the most of it? See what we can do for you and your business.</p>
+                                    <div class="text-end">  
+                                        <a href="about.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #F2A212; color: #F2A212;">Check it out</a href="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #790BA4;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/entrepreneur.svg" class="img-fluid" alt="designer">
+                                        <h4 class="mb-0 text-center fw-bold" style="color: #790BA4;">services</h4>
+                                    </div>
+                                    <p class="card-text">Got an idea for an app? Awesome, let's work together to make your idea a reality.</p>
+                                    <div class="text-end">
+                                        <a href="services.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #790BA4; color: #790BA4;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #2EC23C;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/developer.svg" class="img-fluid" alt="developer">
+                                        <h4 class="mb-0 text-center fw-bold" style="color: #2EC23C;">contact</h4>
+                                    </div>
+                                    <p class="card-text">Want to learn something? Looking for a job or are interested in an internship? Let’s see how we can help you out.</p>
+                                    <div class="text-end">
+                                        <a href="contact.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #2EC23C; color: #2EC23C;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="card mx-auto shadow mb-4" style="outline: 2px solid #070707;">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-center text-uppercase">
+                                        <img src="img/logo.svg" class="img-fluid" alt="logo">
+                                        <h4 class="mb-0 text-center fw-bold">Learn More</h4>
+                                    </div>
+                                    <p class="card-text">Find out more about Ninja. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, voluptatem?</p>
+                                    <div class="text-end">
+                                        <a href="index.html" class="btn btn-sm fw-bold shadow-sm" style="border: 1px solid #070707; color: #070707;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- _____ footer _____ -->
+                <footer class="">
+                    <div class="padd ps-0 pe-0">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+                                <img src="img/NinjaTecg.png" class="img-fluid" alt="">
+                                <p class="mt-4 mb-4">Our Agency Provides Custom Software Development Solutions.</p>
+                                <button class="btn btn-sm btn-light fw-bold shadow-sm">Get in touch</button>
+                                <ul class="social mt-4">
+                                    <li style="border: 1px solid #4970BF;" id="facebook">
+                                        <a href="#" style="color: #4970BF;"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li style="border: 1px solid #037795;" id="linkedin">
+                                        <a href="#" style="color: #037795;"> <i class="fa-brands fa-linkedin-in"></i></a> 
+                                    </li>
+                                    <li style="border: 1px solid #FF4D62;" id="instgram">
+                                        <a href="#" style="color: #FF4D62;"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>                    
+                                    <li style="border: 1px solid #63C9EB;" id="twitter">
+                                        <a href="#" style="color: #63C9EB;"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <h4>Company Address</h4>
+                                <ul class="mt-4 mb-4">
+                                    <li>
+                                        <a href="#">UK: +44 20 3286 1571</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">US: +1 707 408 1656</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ind: +91 9638343734</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <h4>Contact Numbers</h4>
+                                <ul class="mt-4 mb-4">
+                                    <li>
+                                        <a href="#">UK: +44 20 3286 1571</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">US: +1 707 408 1656</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ind: +91 9638343734</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12 mb-3">
+                                <h4>Contact Us</h4>
+                                <ul class="mt-4">
+                                    <li>
+                                        <a href="#">info@ninjatech.agency</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">576 Lakewood Rd North NW, Edmonton, Alberta T6K 3Y1, Canada</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1301 Shivalik Shilp Iscon Cross Road, Ahmedabad 380015</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- copyrights -->
+                        <div class="text-center mini-footer text-muted">
+                            <p class="m-0">Copyright © 2022 Solomon_King. All rights reserved. Privacy Policy Contact</p>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/63c1d829d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

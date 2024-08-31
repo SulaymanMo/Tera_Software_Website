@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- _____ header _____ -->
+    <header class="sticky-top">
+        <div class="padd shadow-sm">
+
+            <section class="d-flex align-items-center flex-grow-1">
+                <section class="bars toggleAside" onclick="toggleAside()">
+                    <div></div>
+                    <div></div>
+                    <div class="mb-0"></div>
+                </section>
+                <h1 class="mb-0 fw-bold"><a href="index.html" class="text-decoration-none">Master</a></h1>  
+            </section>
+
+            <section class="right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-lightbulb"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-user"></i>
+            </section>
+
+
+        </div>
+    </header>
+
+    <!-- _____ sidebar _____ -->
+    <aside>
+        <div class="padd pt-3 pb-3">
+            <a href="#" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/journalist.svg" class="img-fluid" alt="journalist">
+                <h3 class="m-0">Portfolio</h3>
+            </a>
+            <a href="brand.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/investor.svg" class="img-fluid" alt="investor">
+                <h3 class="m-0">Brand</h3>
+            </a>
+            <a href="services.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/entrepreneur.svg" class="img-fluid" alt="entrepreneur">
+                <h3 class="m-0">Services</h3>
+            </a>
+            <a href="about.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/busniess.svg" class="img-fluid" alt="busniess">
+                <h3 class="m-0">About us</h3>
+            </a>
+            <a href="contact.html" onclick="actImg(this)" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/developer.svg" class="img-fluid" alt="developer">
+                <h3 class="m-0">call us</h3>
+            </a>
+            <a href="#" onclick="actImg(this)" class="m-0" onmouseover="actLinks(this)" onmouseout="disLinks(this)">
+                <img src="img/logo.svg" class="img-fluid " alt="logo">
+                <h3 class="m-0">learn more</h3>
+            </a>
+        </div>
+    </aside>
+
+    <!-- _____ portfolio _____ -->
+    <main class="content">
+        <div class="padd p-0">
+            <div class="container-fluid h-100">
+
+                <div class="text-center mt-5">
+                    <h1>Great Portfolio</h1>
+                    <P>Take a look at some of our brand identity examples are here with each different service and solution we provide.</P>
+                </div>
+
+                <section class="port">
+
+                    <ul>
+                        <li><a href="#" class="active" onclick="actLink(this)">All</a></li>
+                        <li><a href="#" onclick="actLink(this)" data-color="#F2A212">besniess</a></li>
+                        <li><a href="#" onclick="actLink(this)" data-color="#EB434E">developer</a></li>
+                        <li><a href="#" onclick="actLink(this)" data-color="#0B51FF">Portfolio</a></li>
+                        <li><a href="#" onclick="actLink(this)" data-color="#790BA4">designer</a></li>
+                        <li><a href="#" onclick="actLink(this)" data-color="#EB434E">journalist</a></li>
+                    </ul>
+
+                    <div class="row mt-5 g-2">
+
+                        <!-- col => 1 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card shadow-sm mb-2" style="outline: 2px solid #0B51FF; height: 11rem;">
+                                <div class="row g-0">
+                                    <div class="col-3">
+                                        <img src="img/investor.svg" alt="investor" class="img-fluid rounded-start m-auto">   
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card-body h-100 overflow-hidden">
+                                            <h4 class="card-title fw-bold text-uppercase" style="color: #0B51FF;">Portfolio</h4>
+                                            <!-- <div class="chatBox h-100"> -->
+                                                <div class="botChat act">
+                                                    <p class="card-title fw-bold">have you ever wondered?</p>
+                                                    <p>What exactly do you mean by 'Portfolio software development company?'</p>
+                                                </div>
+                                                <div class="botChat">
+                                                    <p class="card-title fw-bold">does this sound like you?</p>
+                                                    <p class="">I've got some money burning a hole in my pocket, what upcoming projects can I be a part of?</p>
+                                                </div>
+                                                <!-- <a href="#" class="text-decoration-none card-text"><small>click here for an ansower</small></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/ninja.jpeg" alt="port7" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port5.png" alt="port3" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/entrepreneur.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/developer.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- col => 2 -->
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port2.png" alt="port1" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port1.jpg" alt="portfolio-1" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/busniess.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/entrepreneur.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port1.png" alt="portfolio-1" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/busniess.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/developer.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- col => 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port4.png" alt="port4" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/busniess.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/developer.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port3.png" alt="port3" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mb-2">
+                                <img src="img/port6.png" alt="port6" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Investment opportunities: Perths best underdeveloped asset</h4>
+                                    <p class="card-text">Perth has an opportunity to reshape itself - if we prioritise our most innovative and resourceful sector.</p>
+                                    <p class="card-text mb-0"><small>PUBLISHED AUGUST 24, 2020</small></p>
+                                    <a href="#" class="text-decoration-none h6">besniess news</a>
+                                    <div class="">
+                                        <a href="#"><img src="img/investor.svg" alt="investor" width="46px" class="img-fluid"></a>
+                                        <a href="#"><img src="img/journalist.svg" alt="jornalist" width="46px" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
+                </section>
+
+                <!-- _____ footer _____ -->
+                <footer class="container">
+                    <div class="padd ps-0 pe-0">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+                                <img src="img/NinjaTecg.png" class="img-fluid" alt="">
+                                <p class="mt-4 mb-4">Our Agency Provides Custom Software Development Solutions.</p>
+                                <button class="btn btn-sm btn-light fw-bold shadow-sm">Get in touch</button>
+                                <ul class="social mt-4">
+                                    <li style="border: 1px solid #4970BF;" id="facebook">
+                                        <a href="#" style="color: #4970BF;"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li style="border: 1px solid #037795;" id="linkedin">
+                                        <a href="#" style="color: #037795;"> <i class="fa-brands fa-linkedin-in"></i></a> 
+                                    </li>
+                                    <li style="border: 1px solid #FF4D62;" id="instgram">
+                                        <a href="#" style="color: #FF4D62;"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>                    
+                                    <li style="border: 1px solid #63C9EB;" id="twitter">
+                                        <a href="#" style="color: #63C9EB;"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <h4>Company Address</h4>
+                                <ul class="mt-4 mb-4">
+                                    <li>
+                                        <a href="#">UK: +44 20 3286 1571</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">US: +1 707 408 1656</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ind: +91 9638343734</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <h4>Contact Numbers</h4>
+                                <ul class="mt-4 mb-4">
+                                    <li>
+                                        <a href="#">UK: +44 20 3286 1571</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">US: +1 707 408 1656</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ind: +91 9638343734</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12 mb-3">
+                                <h4>Contact Us</h4>
+                                <ul class="mt-4">
+                                    <li>
+                                        <a href="#">info@ninjatech.agency</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">576 Lakewood Rd North NW, Edmonton, Alberta T6K 3Y1, Canada</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1301 Shivalik Shilp Iscon Cross Road, Ahmedabad 380015</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- copyrights -->
+                        <div class="text-center mini-footer text-muted">
+                            <p class="m-0">Copyright © 2022 Solomon_King. All rights reserved. Privacy Policy Contact</p>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/63c1d829d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
